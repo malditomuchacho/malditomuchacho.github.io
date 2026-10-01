@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mi Diario</title> <style> :root { --fondo: #f5f1e8; --papel: #fffdf7; --texto: #292722; --secundario: #777268; --linea: #ddd6c8; --acento: #8b5e3c; } * { box-sizing: border-box; } body { margin: 0; background: var(--fondo); color: var(--texto); font-family: Georgia, "Times New Roman", serif; line-height: 1.7; } /* Encabezado */ header { max-width: 900px; margin: 0 auto; padding: 80px 25px 50px; text-align: center; } header h1 { margin: 0; font-size: clamp(3rem, 8vw, 6rem); font-weight: normal; letter-spacing: -3px; } header p { margin-top: 10px; color: var(--secundario); font-size: 1.1rem; font-style: italic; } /* Contenedor de entradas */ main { max-width: 800px; margin: 0 auto; padding: 20px 25px 80px; } .entrada { background: var(--papel); padding: 45px; margin-bottom: 45px; border: 1px solid var(--linea); box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04); } .fecha { color: var(--acento); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; } .entrada h2 { margin: 0 0 25px; font-size: 2.2rem; font-weight: normal; line-height: 1.2; } .entrada p { font-size: 1.08rem; } /* Galería de imágenes */ .imagenes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 30px; } .imagenes img { width: 100%; height: 260px; object-fit: cover; display: block; } .imagenes img:first-child { grid-column: span 2; height: 400px; } /* Pie */ footer { text-align: center; padding: 30px 20px 60px; color: var(--secundario); font-size: 0.9rem; } /* Celulares */ @media (max-width: 600px) { header { padding-top: 50px; } .entrada { padding: 28px 22px; } .entrada h2 { font-size: 1.8rem; } .imagenes { grid-template-columns: 1fr; } .imagenes img, .imagenes img:first-child { grid-column: span 1; height: 250px; } } </style> </head> <body> <header> <h1>Mi Diario</h1> <p>Notas, recuerdos y cosas que quiero guardar.</p> </header> <main>
+<!-- ENTRADA MÁS NUEVA -->
+<article class="entrada">
+  <div class="fecha">1 de octubre de 2026</div>
+
+  <h2>Un nuevo comienzo</h2>
+
+  <p>
+    Hoy empiezo este pequeño diario en internet. La idea es ir
+    guardando acá momentos, pensamientos, fotografías y cosas que
+    vaya descubriendo.
+  </p>
+
+  <p>
+    Quizás con el tiempo se convierta en una colección bastante
+    grande de recuerdos.
+  </p>
+
+  <div class="imagenes">
+    <img src="imagenes/foto-01.jpg" alt="Descripción de la fotografía">
+    <img src="imagenes/foto-02.jpg" alt="Descripción de la fotografía">
+    <img src="imagenes/foto-03.jpg" alt="Descripción de la fotografía">
+  </div>
+</article>
+
+
+<!-- SEGUNDA ENTRADA -->
+<article class="entrada">
+  <div class="fecha">25 de septiembre de 2026</div>
+
+  <h2>Una tarde tranquila</h2>
+
+  <p>
+    Hay días en los que no pasa nada particularmente importante,
+    pero igual terminan siendo los que uno recuerda.
+  </p>
+
+  <div class="imagenes">
+    <img src="imagenes/foto-04.jpg" alt="Descripción de la fotografía">
+    <img src="imagenes/foto-05.jpg" alt="Descripción de la fotografía">
+  </div>
+</article>
+
+
+<!-- TERCERA ENTRADA -->
+<article class="entrada">
+  <div class="fecha">12 de septiembre de 2026</div>
+
+  <h2>Primeras notas</h2>
+
+  <p>
+    Esta fue una de esas pequeñas experiencias que vale la pena
+    dejar anotadas antes de que el tiempo las borre.
+  </p>
+
+  <div class="imagenes">
+    <img src="imagenes/foto-06.jpg" alt="Descripción de la fotografía">
+  </div>
+</article>
+
+</main> <footer> © 2026 — Mi Diario </footer> </body> </html>
